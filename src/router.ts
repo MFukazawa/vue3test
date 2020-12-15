@@ -9,8 +9,3 @@ export default createRouter({
     { path: "/posts", component: Posts },
   ]
 })
-
-// export default {
-//   '/': 'Home',
-//   '/about': 'About'
-// }
