@@ -5,6 +5,9 @@
     Edit <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
   <attrs id="attrs-id" class="class-test">Attrs component</attrs>
+  <a href="/posts">
+    Click to go to Posts page
+  </a>
 </template>
 
 <script lang="ts">
