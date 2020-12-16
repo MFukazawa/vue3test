@@ -42,10 +42,8 @@ export default defineComponent({
           data.value = json.results;
         })
         .catch(err => {
-          if (err.json) {
-            return err.json.then(json => {
-              error.value.message = json.message;
-            })
+          if (err) {
+            console.log(err);
           }
         })
         .then(() => {

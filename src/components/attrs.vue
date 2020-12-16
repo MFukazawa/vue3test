@@ -6,11 +6,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, watch } from 'vue'
 
 export default defineComponent({
   setup() {
     const title = ref("Input Test")
+
+    watch(title, (newValue, oldValue) => {
+      console.log('The new title value is: ' + title.value);
+    })
+
     return {
       title
     }
